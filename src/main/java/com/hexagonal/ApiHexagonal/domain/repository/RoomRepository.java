@@ -3,6 +3,7 @@ package com.hexagonal.ApiHexagonal.domain.repository;
 import com.hexagonal.ApiHexagonal.domain.model.Rooms;
 
 import java.util.List;
+import java.util.UUID;
 
 public interface RoomRepository {
 
@@ -10,5 +11,5 @@ public interface RoomRepository {
 
     Rooms findById(int id);
 
-    List<Rooms> findAll();
+    List<Rooms> findAllByIdHome(UUID id, int page, int size);
 }
