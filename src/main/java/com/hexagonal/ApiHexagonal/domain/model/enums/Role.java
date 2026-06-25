@@ -2,5 +2,13 @@ package com.hexagonal.ApiHexagonal.domain.model.enums;
 
 public enum Role {
     USER,
-    ADMIN
+    ADMIN;
+
+    public Role getUser(){
+        return USER;
+    }
+
+    public Role getAdmin(){
+        return ADMIN;
+    }
 }

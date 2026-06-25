@@ -21,4 +21,5 @@ public class Rooms {
     public void setName(String name) {
         this.name = name;
     }
+
 }

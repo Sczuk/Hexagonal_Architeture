@@ -1,6 +1,8 @@
 package com.hexagonal.ApiHexagonal.domain.model;
 
 
+import com.hexagonal.ApiHexagonal.domain.model.enums.Role;
+
 import java.util.List;
 import java.util.UUID;
 
@@ -14,7 +16,17 @@ public class User {
 
     private String password;
 
-    private List<Home> homes;
+    private List<Home> homesOwner;
+
+    private Role role;
+
+    public Role getRole() {
+        return role;
+    }
+
+    public void setRole(Role role) {
+        this.role = role;
+    }
 
     public UUID getId() {
         return id;
@@ -48,11 +60,11 @@ public class User {
         this.password = password;
     }
 
-    public List<Home> getHomes() {
-        return homes;
+    public List<Home> getHomesOwner() {
+        return homesOwner;
     }
 
-    public void setHomes(List<Home> homes) {
-        this.homes = homes;
+    public void setHomesOwner(List<Home> homesOwner) {
+        this.homesOwner = homesOwner;
     }
 }
